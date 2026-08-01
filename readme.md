@@ -74,8 +74,8 @@ Every feature follows the same engineering workflow:
 
 The objective is not only to build a working device but also to understand the engineering principles behind every design decision.
 
----
 
+---
 # 🏗 High-Level Architecture
 
 ```text
