@@ -66,3 +66,5 @@ DeskDog is more than a desktop companion.
 It is a long-term journey into embedded software engineering, covering architecture, firmware development, graphics programming, system design, and professional engineering practices.
 
 Every document in this directory represents knowledge gained while building the project.
+
+
