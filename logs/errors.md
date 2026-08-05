@@ -1,0 +1,1 @@
+this stores all the errors and will have a track on how each error got fixed
