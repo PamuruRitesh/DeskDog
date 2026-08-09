@@ -3,4 +3,7 @@
 2. It behaves like my personal diary where i share every day.
 
 08-08-2626
-before making the dog can we make a spotify version of this as i saw some ideas
+before making the dog can we make a spotify version of this as i saw some ideas.
+
+09-08-2026
+the spotify idea starts with an esp-32 and oled display.
