@@ -1,7 +1,7 @@
 #include <Arduino.h>
 
-#include "display.h"
-#include "dog.h"
+#include "graphics/display/display.h"
+#include "core/dog.h"
 
 void setup()
 {

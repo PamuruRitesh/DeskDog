@@ -1,5 +1,5 @@
 #include "dog.h"
-#include "display.h"
+#include "graphics/display/display.h"
 
 void drawDog()
 {
