@@ -5,16 +5,16 @@
 
 void setup()
 {
-    initDisplay();
+    init_display();
 }
 
 void loop()
 {
-    clearDisplay();
+    clear_display();
 
-    drawDog();
+    draw_dog(get_display());
 
-    updateDisplay();
+    update_display();
 
     delay(100);
 }

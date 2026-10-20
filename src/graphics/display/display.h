@@ -1,13 +1,12 @@
 #ifndef DISPLAY_H
 #define DISPLAY_H
 
-#include <Adafruit_GFX.h>
-#include <Adafruit_SSD1306.h>
+#include "display_interface.h"
 
-extern Adafruit_SSD1306 display;
+void init_display();
+void clear_display();
+void update_display();
 
-void initDisplay();
-void clearDisplay();
-void updateDisplay();
+DisplayInterface& get_display();
 
 #endif

@@ -1,6 +1,8 @@
 #ifndef DOG_H
 #define DOG_H
 
-void drawDog();
+#include "graphics/display/display_interface.h"
+
+void draw_dog(DisplayInterface& display);
 
 #endif

@@ -1,34 +1,33 @@
+
+#include <Arduino.h>
+
 #include "display.h"
-#include "config.h"
+#include "ssd1306_display.h"
 
-#include <Wire.h>
+static Ssd1306Display oled_display;
 
-Adafruit_SSD1306 display(
-    SCREEN_WIDTH,
-    SCREEN_HEIGHT,
-    &Wire,
-    OLED_RESET
-);
-
-void initDisplay()
+void init_display()
 {
-    if (!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS))
+    if (!oled_display.begin())
     {
         while (true)
         {
+            delay(1000);
         }
     }
-
-    display.clearDisplay();
-    display.display();
 }
 
-void clearDisplay()
+void clear_display()
 {
-    display.clearDisplay();
+    oled_display.clear();
 }
 
-void updateDisplay()
+void update_display()
 {
-    display.display();
+    oled_display.show();
+}
+
+DisplayInterface& get_display()
+{
+    return oled_display;
 }

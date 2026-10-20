@@ -1,14 +1,13 @@
 #include "dog.h"
-#include "graphics/display/display.h"
 
-void drawDog()
+void draw_dog(DisplayInterface& display)
 {
-    // Left Eye
-    display.fillCircle(40, 28, 6, SSD1306_WHITE);
+    // Left eye
+    display.fill_circle(40, 28, 6, DisplayColor::white);
 
-    // Right Eye
-    display.fillCircle(88, 28, 6, SSD1306_WHITE);
+    // Right eye
+    display.fill_circle(88, 28, 6, DisplayColor::white);
 
     // Nose
-    display.fillCircle(64, 42, 3, SSD1306_WHITE);
+    display.fill_circle(64, 42, 3, DisplayColor::white);
 }

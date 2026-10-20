@@ -1,7 +1,7 @@
-#ifndef CONFIG_H
-#define CONFIG_H
 
-// OLED
+#ifndef SSD1306_CONFIG_H
+#define SSD1306_CONFIG_H
+
 #define SCREEN_WIDTH 128
 #define SCREEN_HEIGHT 64
 
