@@ -187,3 +187,23 @@ Possible future additions include:
 * Desktop Companion Framework
 
 These should integrate naturally into the existing layered architecture without requiring major redesign.
+
+
+
+## Hardware Independence Rules
+
+1. Core logic must not include Arduino, Wire, or hardware-driver headers.
+2. Core logic communicates with hardware through interfaces.
+3. Hardware-specific code belongs in its corresponding driver or platform layer.
+4. Hardware configuration belongs close to the component that uses it.
+5. Each supported board has its own PlatformIO build environment.
+6. Shared core code should compile without depending on a specific display driver.
+7. New abstractions should be introduced when they solve a real portability or testing need.
+
+## Current Display Architecture
+
+- `src/core/dog.cpp`: draws the dog through `DisplayInterface`.
+- `src/graphics/display/display_interface.h`: defines generic display operations.
+- `src/graphics/display/ssd1306_display.cpp`: implements those operations for the SSD1306 OLED.
+- `src/graphics/display/ssd1306_config.h`: stores the SSD1306 display settings.
+- `src/graphics/display/display.cpp`: exposes the display to the application.

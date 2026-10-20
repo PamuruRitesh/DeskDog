@@ -21,6 +21,21 @@ public:
         DisplayColor color
     ) override;
 
+    void draw_circle(
+        int16_t x,
+        int16_t y,
+        int16_t radius,
+        DisplayColor color
+    ) override;
+
+    void draw_line(
+        int16_t x1,
+        int16_t y1,
+        int16_t x2,
+        int16_t y2,
+        DisplayColor color
+    ) override;
+
     void show() override;
 
 private:

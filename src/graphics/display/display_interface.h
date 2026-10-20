@@ -23,6 +23,21 @@ public:
         DisplayColor color
     ) = 0;
 
+    virtual void draw_circle(
+        int16_t x,
+        int16_t y,
+        int16_t radius,
+        DisplayColor color
+    ) = 0;
+
+    virtual void draw_line(
+        int16_t x1,
+        int16_t y1,
+        int16_t x2,
+        int16_t y2,
+        DisplayColor color
+    ) = 0;
+
     virtual void show() = 0;
 };
 

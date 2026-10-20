@@ -40,6 +40,33 @@ void Ssd1306Display::fill_circle(
     oled.fillCircle(x, y, radius, oled_color);
 }
 
+void Ssd1306Display::draw_circle(
+    int16_t x,
+    int16_t y,
+    int16_t radius,
+    DisplayColor color
+)
+{
+    uint16_t oled_color =
+        (color == DisplayColor::white) ? SSD1306_WHITE : SSD1306_BLACK;
+
+    oled.drawCircle(x, y, radius, oled_color);
+}
+
+void Ssd1306Display::draw_line(
+    int16_t x1,
+    int16_t y1,
+    int16_t x2,
+    int16_t y2,
+    DisplayColor color
+)
+{
+    uint16_t oled_color =
+        (color == DisplayColor::white) ? SSD1306_WHITE : SSD1306_BLACK;
+
+    oled.drawLine(x1, y1, x2, y2, oled_color);
+}
+
 void Ssd1306Display::show()
 {
     oled.display();

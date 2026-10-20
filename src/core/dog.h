@@ -3,6 +3,30 @@
 
 #include "graphics/display/display_interface.h"
 
-void draw_dog(DisplayInterface& display);
+enum class EyeState
+{
+    open,
+    closed
+};
 
+enum class EyeDirection
+{
+    center,
+    left,
+    right
+};
+
+enum class DogExpression
+{
+    happy,
+    sleepy,
+    surprised
+};
+
+void draw_dog(
+    DisplayInterface& display,
+    EyeState eye_state = EyeState::open,
+    EyeDirection eye_direction = EyeDirection::center,
+    DogExpression expression = DogExpression::happy
+);
 #endif
